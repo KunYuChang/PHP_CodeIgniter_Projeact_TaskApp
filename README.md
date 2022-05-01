@@ -125,3 +125,22 @@ php spark migrate:rollback
 
 1. 命名通常為 : 資料表名稱+Model
 2. 使用 Codeigniter 提供的方法來取得資料
+
+### Debugging
+
+1. 開啟除錯列(超好用)，設置方法參考官網，其中一個方法是把`.env`
+   app.baseURL 設置跟打開的網址一樣，可以看到 Database 時間確認效能.....等等
+2. dd Function
+
+```php
+// 普通的PHP除錯要這樣
+echo '<pre>';
+var_dump($data);
+echo '</pre>';
+exit
+
+// CI可以用dd做到一樣的事情，還更精美 (好用!)
+dd($data);
+```
+
+[Debugging](https://codeigniter4.github.io/userguide/testing/debugging.html)
