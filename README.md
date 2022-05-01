@@ -83,3 +83,10 @@ app > Config > Rotes.php
 
 1. View 包含顯示此資料所需的最小程式碼
 2. 框架中 View 不進行複雜的資料操作或計算
+
+### 設定資料庫連線
+
+有兩個地方可以設定資料庫連線
+
+1. [Database Configuration](https://codeigniter.com/user_guide/database/configuration.html)
+2. `.env`
