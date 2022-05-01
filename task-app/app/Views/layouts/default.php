@@ -6,4 +6,9 @@
     <title>Home</title>
 </head>
 
+<? $this->rederSection("content") ?>
+
 <body>
+</body>
+
+</html>

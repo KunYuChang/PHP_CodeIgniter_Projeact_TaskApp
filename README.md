@@ -47,8 +47,22 @@ app > Config > Rotes.php
 
 ## 處理重覆的 HTML Code
 
-- 方法 1 (CI 早期版本常見)
+- 👎 方法 1 (Controllers view)
 
 1. 拆出重覆的 Code 到獨立的檔案
 2. Controllers view 出來
 3. 意味著 Controllers Code 會比較臃腫
+4. CI 早期版本常見
+5. 我稱為"寄人籬下方法"
+
+- 🤏 方法 2 (include)
+
+1. View 使用 CI 提供的 include 方法, 接近原生用法
+2. 有時候會用到
+3. 我稱為"黑暗大法師方法"
+
+- 👍 方法 3 (layout)
+
+1. 框架常見
+2. 客製化最簡單
+3. 我稱為"挖洞放進去方法"
