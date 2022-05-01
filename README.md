@@ -90,3 +90,33 @@ app > Config > Rotes.php
 
 1. [Database Configuration](https://codeigniter.com/user_guide/database/configuration.html)
 2. `.env`
+
+### Database Migrations
+
+1. 中翻資料庫遷移(!?)
+2. PHP 處理資料庫操作
+3. 遷移是一種資料庫的版本控制，讓團隊能夠輕鬆的修改跟共享應用程式的資料庫結構。
+4. 可以手動創建 Migration, 但可以用指令創建更為簡單
+5. 使用 Database Forge Class 來操作資料庫
+
+創建 migrate 檔案指令
+
+```php
+// 語法
+php spark migrate:create <自定義名稱>
+
+// 範例
+php spark migrate:create create_task
+```
+
+執行 migrate 檔案指令
+
+```php
+// 執行
+php spark migrate
+
+// 退回
+php spark migrate:rollback
+```
+
+- [Database Migrations](https://codeigniter.com/user_guide/dbmgmt/migration.html)
