@@ -10,8 +10,10 @@
     <?php foreach ($tasks as $task) : ?>
 
         <li>
+            <a href="<?= site_url("/tasks/show/" . $task['id']) ?>">
+                <?= $task['description'] ?>
+            </a>
             <?= $task['id'] ?>
-            <?= $task['description'] ?>
         </li>
 
     <?php endforeach; ?>
