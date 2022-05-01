@@ -144,3 +144,21 @@ dd($data);
 ```
 
 [Debugging](https://codeigniter4.github.io/userguide/testing/debugging.html)
+
+## CRUD
+
+### 顯示單筆資料
+
+```php
+    public function show($id)
+    {
+        $model = new \App\Models\TaskModel;
+        $task = $model->find($id);
+
+        // dd($task);
+
+        return view('Tasks/show', [
+            'task' => $task
+        ]);
+    }
+```
