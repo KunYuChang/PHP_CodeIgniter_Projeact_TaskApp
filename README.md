@@ -205,3 +205,41 @@ $something = $request->getPost('foo');
 4. Model 預設會對欄位名稱把關，把要輸入的設置為允許。
 
 [Configuring Model](https://codeigniter.com/user_guide/models/model.html#configuring-your-model)
+
+### 對表單進行驗證
+
+Model 設定 description 欄位不能為空
+
+```php
+    protected $validationRules = [
+        'description' => 'required'
+    ];
+```
+
+Controllers
+
+```php
+    $result = $model->insert([
+        'description' => $this->request->getPost("description")
+    ]);
+
+    if ($result === false) {
+        dd($model->errors());
+        // 會得到一個預設的錯誤訊息
+        // "The description field is required."
+    } else {
+        dd($result);
+    }
+```
+
+可以自定義錯誤訊息
+
+```php
+    protected $validationMessages = [
+        'description' => [
+            'required' => 'Please enter a description'
+        ]
+    ];
+```
+
+### 轉址
