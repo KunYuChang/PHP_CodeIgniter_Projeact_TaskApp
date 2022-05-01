@@ -243,3 +243,11 @@ Controllers
 ```
 
 ### 轉址
+
+https://codeigniter.com/user_guide/general/common_functions.html#redirect
+
+### Flash Messages
+
+傳輸後就會刪掉的快閃 Session，適合顯示一次性錯誤或狀態訊息。(按 F5 就不見了)
+
+[Flashdata](https://codeigniter.com/user_guide/libraries/sessions.html#flashdata)
