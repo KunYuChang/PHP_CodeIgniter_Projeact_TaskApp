@@ -120,3 +120,8 @@ php spark migrate:rollback
 ```
 
 - [Database Migrations](https://codeigniter.com/user_guide/dbmgmt/migration.html)
+
+### Models
+
+1. 命名通常為 : 資料表名稱+Model
+2. 使用 Codeigniter 提供的方法來取得資料
