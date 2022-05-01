@@ -6,7 +6,7 @@
     <title>Home</title>
 </head>
 
-<? $this->rederSection("content") ?>
+<?= $this->renderSection("content") ?>
 
 <body>
 </body>

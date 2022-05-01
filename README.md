@@ -1,12 +1,16 @@
 # PHP_CodeIgniter_Projeact_TaskApp
 
-## 建立專案
+[TOC]
+
+## 簡介及項目設置
+
+### 建立專案
 
 ```php
 composer create-project codeigniter4/appstarter task-app
 ```
 
-## 設置開發模式
+### 設置開發模式
 
 🤔 要幹嘛?
 
@@ -20,6 +24,8 @@ composer create-project codeigniter4/appstarter task-app
 
 - 這是一個環境變數設定檔。(Environment Configuration file)
 - `.env`是框架才有的設計
+
+## MVC 基礎
 
 ## 建立第一個 View
 
@@ -66,3 +72,14 @@ app > Config > Rotes.php
 1. 框架常見
 2. 客製化最簡單
 3. 我稱為"挖洞放進去方法"
+
+## Database
+
+1. models
+2. configuration
+3. migrations
+
+### 顯示動態資料, 將數據從 Controllers 傳到 View
+
+1. View 包含顯示此資料所需的最小程式碼
+2. 框架中 View 不進行複雜的資料操作或計算
