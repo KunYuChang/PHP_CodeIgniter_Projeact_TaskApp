@@ -20,3 +20,8 @@ composer create-project codeigniter4/appstarter task-app
 
 - 這是一個環境變數設定檔。(Environment Configuration file)
 - `.env`是框架才有的設計
+
+## 建立第一個 View
+
+1. Controllers 會使用到框架函式 view , 可以省略`.php`副檔名
+2. View 最好建立一個跟 Controllers 對應的資料夾

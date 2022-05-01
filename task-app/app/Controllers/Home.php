@@ -6,6 +6,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        echo "Hello World";
+        echo view("Home/index");
     }
 }
