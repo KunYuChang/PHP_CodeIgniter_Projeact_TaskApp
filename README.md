@@ -25,3 +25,17 @@ composer create-project codeigniter4/appstarter task-app
 
 1. Controllers 會使用到框架函式 view , 可以省略`.php`副檔名
 2. View 最好建立一個跟 Controllers 對應的資料夾
+
+## 框架 Router
+
+Router 決定執行哪個 Controller & Method
+
+```
+exaple.com/ControllerClass/ClassMethod/ParamID
+```
+
+Router 有設定檔
+
+```
+app > Config > Rotes.php
+```
