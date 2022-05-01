@@ -24,4 +24,9 @@ class Tasks extends BaseController
             'task' => $task
         ]);
     }
+
+    public function new()
+    {
+        return view('Tasks/new');
+    }
 }

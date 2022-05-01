@@ -169,3 +169,14 @@ Q: a 連結就可以辦到，那為什麼要使用這個?
 A: 為了更好的靈活性，舉例來說，測試機與正式機檔案放置路徑不同。
 
 site_url function 會回傳當前網站完整的網址
+
+[URL Helper](https://codeigniter.com/user_guide/helpers/url_helper.html#site_url)
+
+### 使用 form helper 來處理表單
+
+Q:由於有許多地方都會用到 form helper，可以引入使用，但感覺很麻煩
+A:可以到 BaseController.php 去設定全部的網頁都要使用。
+
+```php
+protected $helpers = ["form"];
+```
