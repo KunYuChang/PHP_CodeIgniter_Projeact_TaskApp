@@ -39,3 +39,8 @@ Router 有設定檔
 ```
 app > Config > Rotes.php
 ```
+
+## 新增 Controller , View 顯示任務清單
+
+1. 新增`app/Controllers/Tasks.php`
+2. Controllers 新增的檔名要大寫開頭
