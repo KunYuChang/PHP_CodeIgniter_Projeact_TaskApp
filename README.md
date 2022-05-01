@@ -44,3 +44,11 @@ app > Config > Rotes.php
 
 1. 新增`app/Controllers/Tasks.php`
 2. Controllers 新增的檔名要大寫開頭
+
+## 處理重覆的 HTML Code
+
+- 方法 1 (CI 早期版本常見)
+
+1. 拆出重覆的 Code 到獨立的檔案
+2. Controllers view 出來
+3. 意味著 Controllers Code 會比較臃腫
