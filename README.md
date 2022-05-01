@@ -180,3 +180,28 @@ A:可以到 BaseController.php 去設定全部的網頁都要使用。
 ```php
 protected $helpers = ["form"];
 ```
+
+### 處理已提交表單
+
+1. 如果是原生的會去檢查$\_POST
+
+```php
+$something = isset($_POST['foo'] ? $_POST['foo'] : NULL);
+```
+
+2. Codeigniter 提供比較簡單的方法
+
+```php
+// 如果沒有值會直接回傳NULL
+$something = $request->getPost('foo');
+```
+
+[Retrieving Input](https://codeigniter.com/user_guide/incoming/incomingrequest.html#retrieving-input)
+
+3. 把資料存入資料庫
+
+[Saving Data](https://codeigniter.com/user_guide/models/model.html#saving-data)
+
+4. Model 預設會對欄位名稱把關，把要輸入的設置為允許。
+
+[Configuring Model](https://codeigniter.com/user_guide/models/model.html#configuring-your-model)
