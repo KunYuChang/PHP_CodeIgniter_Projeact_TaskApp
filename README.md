@@ -265,3 +265,31 @@ https://codeigniter.com/user_guide/general/common_functions.html#redirect
 2. Views / Tasks 複製 new.php 改成 edit.php
 
 ### 新增 > 處理 > 提交修改資料的表單
+
+```php
+    public function update($id)
+    {
+        $model = new \App\Models\TaskModel;
+
+        $result = $model->update($id, [
+            'description' => $this->request->getPost('description')
+        ]);
+
+        if ($result) {
+            return redirect()->to("/tasks/show/$id")
+            ->with('info', 'Task updated successfully');
+        } else {
+            return redirect()->back();
+        }
+
+    }
+```
+
+### 保存已經提交的表單中 「舊的輸入資料」
+
+https://codeigniter.tw/user_guide/general/common_functions.html#old
+
+### 共用表單程式碼
+
+1. 將共用表單的程式碼從 new.php & edit.php 抽出來寫入 form.php
+2. 由於 new.php 並沒有 `esc($task['description'])`, 會噴錯, 解決方法可以傳入一個空值
