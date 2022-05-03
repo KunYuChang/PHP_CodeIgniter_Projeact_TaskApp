@@ -251,3 +251,15 @@ https://codeigniter.com/user_guide/general/common_functions.html#redirect
 傳輸後就會刪掉的快閃 Session，適合顯示一次性錯誤或狀態訊息。(按 F5 就不見了)
 
 [Flashdata](https://codeigniter.com/user_guide/libraries/sessions.html#flashdata)
+
+### 防止 xss
+
+1. CI 用的方法 : [esc](https://codeigniter.com/user_guide/general/common_functions.html#esc)
+2. PHP 用的方法 : [htmlspecialchars](https://www.php.net/manual/en/function.htmlspecialchars.php)
+
+## CURD-2
+
+### 修改資料
+
+1. Controllers / Task.php 複製 show 改成 edit
+2. Views / Tasks 複製 new.php 改成 edit.php
